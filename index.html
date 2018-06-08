@@ -6,12 +6,16 @@
   <title>Week 7 Assignemnt</title>
   <meta name="Ryan" content="week7Assignment">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>     
+  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
-    <table class="table">
+    <table class="table" id="trainTable">
         <thead>
           <tr>
             <th scope="col">Train Name</th>
@@ -22,56 +26,34 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>@mdo</td>
-            </tr>
+            <tbody id="trainTable">
+                <tr></tr>
+              </tbody>
         </tbody>
       </table>
       <form class="col-lg-6 col-md-6 col-sm-10">
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Train Name</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            <textarea class="form-control" id="nameArea" rows="1"></textarea>
           </div>
           <div class="form-group">
               <label for="exampleFormControlTextarea1">Destination</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              <textarea class="form-control" id="destinationArea" rows="1"></textarea>
           </div>
           <div class="form-group">
               <label for="exampleFormControlTextarea1">First Train Time</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              <textarea class="form-control" id="timeArea" rows="1"></textarea>
           </div>
           <div class="form-group">
               <label for="exampleFormControlTextarea1">Frequency</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              <textarea class="form-control" id="frequencyArea" rows="1"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
         </form>
-        
-  <script src="js/script.js"></script>
+  
+
+
+  
+
 </body>
 </html>
