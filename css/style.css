@@ -1,0 +1,9 @@
+.lead{
+    margin: 0;
+}
+
+.jumbotron-fluid{
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
